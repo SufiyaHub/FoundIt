@@ -33,9 +33,6 @@ After successful verification, the **finder's phone number and contact details a
 **Database:** Supabase  
 **Tools:** Android Studio, Codex, Antigravity
 
-**Working Demo**
-
-[Watch the Working Demo](YOUR_VIDEO_LINK)
 
 **Objective**
 
