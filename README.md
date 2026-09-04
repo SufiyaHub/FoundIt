@@ -82,5 +82,5 @@ A working demonstration video of the FoundIt application is provided below.
 
 
 
-To provide a simple and secure platform for recovering lost belongings while reducing false claims through item verification.
+To provide a simple and secure platform for recovering lost belongings while reducing false claims through item verification..
 
