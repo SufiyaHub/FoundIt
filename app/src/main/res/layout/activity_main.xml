@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/foundit_black"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/foundit_black"
+                android:overScrollMode="never" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/loadingOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/foundit_black"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp">
+
+            <ImageView
+                android:id="@+id/loadingLogo"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/foundit_logo" />
+
+            <TextView
+                android:id="@+id/loadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:includeFontPadding="false"
+                android:text="@string/loading"
+                android:textColor="@color/foundit_text"
+                android:textSize="18sp" />
+
+            <com.foundit.app.ui.ShimmerView
+                android:id="@+id/shimmerOne"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="44dp"
+                app:cornerRadius="8dp" />
+
+            <com.foundit.app.ui.ShimmerView
+                android:id="@+id/shimmerTwo"
+                android:layout_width="78dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="14dp"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:indeterminate="false"
+                app:indicatorColor="@color/foundit_accent"
+                app:trackColor="@color/foundit_surface_high"
+                app:trackCornerRadius="6dp"
+                app:trackThickness="6dp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/offlineOverlay"
+            layout="@layout/view_offline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fullscreenContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/splashOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/foundit_black"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/splashLogo"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/foundit_logo" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

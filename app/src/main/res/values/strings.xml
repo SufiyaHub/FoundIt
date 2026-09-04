@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FoundIt</string>
+    <string name="default_notification_channel_id">foundit_general</string>
+    <string name="default_notification_channel_name">FoundIt updates</string>
+    <string name="default_notification_channel_description">Important account, item, and community updates.</string>
+    <string name="item_status_notification_channel_id">foundit_item_status</string>
+    <string name="item_status_notification_channel_name">Item status updates</string>
+    <string name="item_status_notification_channel_description">Confirmations and returned-item updates for found items.</string>
+    <string name="notification_confirmation_title">Item confirmation received</string>
+    <string name="notification_confirmation_body">The owner confirmed your found item.</string>
+    <string name="notification_confirmation_body_with_item">The owner confirmed %1$s.</string>
+    <string name="notification_returned_title">Item marked returned</string>
+    <string name="notification_returned_body">Thanks for helping return the item.</string>
+    <string name="notification_returned_body_with_item">Thanks for helping return %1$s.</string>
+    <string name="offline_title">You are offline</string>
+    <string name="offline_body">Check your connection and try again. FoundIt will reconnect automatically when the network returns.</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading FoundIt</string>
+    <string name="download_started">Download started</string>
+    <string name="file_upload">Choose file</string>
+</resources>

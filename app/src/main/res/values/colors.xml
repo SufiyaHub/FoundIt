@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="foundit_black">#030507</color>
+    <color name="foundit_surface">#071116</color>
+    <color name="foundit_surface_high">#0E2028</color>
+    <color name="foundit_primary">#21A7D8</color>
+    <color name="foundit_primary_dark">#0B6B9A</color>
+    <color name="foundit_accent">#77E3D0</color>
+    <color name="foundit_text">#F3FAFC</color>
+    <color name="foundit_text_muted">#A5BDC6</color>
+    <color name="foundit_error">#FF6B6B</color>
+    <color name="transparent">#00000000</color>
+</resources>
